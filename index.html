@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <title>Trouw Yin & Jeroen</title>
+    <style>
+        body {
+            background-color: #fdfaf6;
+            font-family: 'Playfair Display', serif;
+            color: #5c4432;
+            padding: 2rem;
+        }
+
+        .link-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .envit_title {
+            color: #edc48b;
+            background: linear-gradient(135deg, #8d917a, #a1a58c);
+            font-family: 'Great Vibes', cursive;
+            font-size: 3.5rem;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .grid-sections {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        @media (min-width: 900px) {
+            .grid-sections {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+        }
+
+        h5 {
+            margin-top: 0;
+            margin-bottom: 0.7rem;
+            font-size: 1.3rem;
+            color: #8d917a;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        /* FLEX rij voor elke link */
+        .main-link {
+            display: grid;
+            grid-template-columns: 1fr 90px auto;
+            /* 90px = vaste kolombreedte voor afstand */
+            align-items: center;
+            gap: 0.5rem;
+
+        }
+
+        .hotel-link {
+            font-size: 1rem;
+            color: #6B7466;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .hotel-link:hover {
+            color: #a1a58c;
+        }
+
+        .distance {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: #6B7466;
+            font-size: 0.9rem;
+        }
+
+        .maps-link svg,
+        .distance svg {
+            width: 16px;
+            height: 16px;
+            fill: #6B7466;
+            flex-shrink: 0;
+        }
+
+        .maps-link {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .main-link:hover {
+            background-color: #a1a58c;
+            color: #fff;
+            border-radius: 6px;
+
+        }
+
+        .main-link:hover .hotel-link,
+        .main-link:hover .distance,
+        .main-link:hover .maps-link svg {
+            color: #fff;
+            fill: #fff;
+        }
+
+        .link-list {
+            display: flex;
+            flex-direction: column;
+
+            /* dit bepaalt de verticale ruimte */
+        }
+
+        .link-list li {
+            padding: 0.1rem 0;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body translate="no">
+    <div class="link-container">
+        <h1 class="envit_title">Wij Trouwen &#9829;</h1>
+
+        <div class="grid-sections">
+
+            <!-- HOTELS -->
+            <div class="section">
+                <h5>Hôtels :</h5>
+                <ul class="link-list">
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.chateaudevignee.be/fr/" target="_blank" class="hotel-link">Château de
+                                Vignée</a>
+                            <span class="distance">
+                                <!-- auto -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                7 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Château+de+Vignée" target="_blank"
+                                class="maps-link">
+                                <!-- map -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://all.accor.com/hotel/B7R5/index.fr.shtml" target="_blank"
+                                class="hotel-link">Hôtel Mercure</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                12 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Rue+Joseph+Lamotte+16,+Rochefort,+Belgique"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://aulitdesours.be/fr/" target="_blank" class="hotel-link">Au Lit des ours</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                6 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Au+Lit+des+ours,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="http://www.hotellimbourg.be/" target="_blank" class="hotel-link">Le Limbourg</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                0.5 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Place+Roi+Albert+21,+5580+Rochefort,+Belgique"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.malleposte.net/fr/" target="_blank" class="hotel-link">La Malle
+                                Poste</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                1 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Rue+de+Behogne+46,+5580+Rochefort,+Belgique"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.booking.com/hotel/be/well-in.fr.html" target="_blank"
+                                class="hotel-link">Le Well'in Hôtel</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                3 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Le+Well'in+Hôtel,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <!-- GITES -->
+            <div class="section">
+                <h5>Gîtes et chambres d'hôtes :</h5>
+                <ul class="link-list">
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.tripadvisor.be/Hotel_Review-g2222034-d2216602-Reviews-Les_4_lunes-Lavaux_Sainte_Anne_The_Ardennes_Wallonia.html"
+                                target="_blank" class="hotel-link">Château de
+                                Les 4 Lunes </a>
+                            <span class="distance">
+                                <!-- auto -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                11 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Les+4+Lunes,+Lavaux-Sainte-Anne"
+                                target="_blank" class="maps-link">
+                                <!-- map -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.dionlechaletsuisse.be/" target="_blank" class="hotel-link">Le Chalet
+                                Suisse</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                10 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Le+Chalet+Suisse,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://fr.ardennes-etape.be/maisons-de-vacances-ardennes/Lavaux-Sainte-Anne/Maison-de-vacances-Sauna-105872-01/"
+                                target="_blank" class="hotel-link">La Vieille Ferme de Lavaux</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                8 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=La+Vieille+Ferme+de+Lavaux,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://fr.ardennes-etape.be/maisons-de-vacances-ardennes/Rochefort/Villa-de-Luxe-106884-05/"
+                                target="_blank" class="hotel-link">La maison Lemonnier</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                2 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=La+maison+Lemonnier,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.facebook.com/hyggesuite.be" target="_blank" class="hotel-link">HYGGE
+                                suite</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                4 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=HYGGE+suite,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.booking.com/hotel/be/villa-les-lucioles.fr.html" target="_blank"
+                                class="hotel-link">Villa Lucioles</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                5 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Villa+Lucioles,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.kaleo-asbl.be/fr/gites/han-sur-lesse/" target="_blank"
+                                class="hotel-link">Gîte Kaleo </a>
+                            <span class="distance">
+                                <!-- auto -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                7 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Gîte+Kaleo,+Han-sur-Lesse"
+                                target="_blank" class="maps-link">
+                                <!-- map -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.location-revogne.com/la-maison-d-engon" target="_blank"
+                                class="hotel-link">La Maison d'Engon</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                9 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=La+Maison+d'Engon,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.gites.fr/gites_gite-le-martin-pecheur-beauraing---ardennes-belges_beauraing_65967.htm"
+                                target="_blank" class="hotel-link"> Le Martin Pêcheur</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                15 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Le+Martin+Pêcheur,+Beauraing"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.giteleniaubois.be/" target="_blank" class="hotel-link">Le Niau Bois</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                6 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Le+Niau+Bois,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://visitwallonia.be/fr-be/content/chalet-lessive-le-paradou" target="_blank"
+                                class="hotel-link">Le Paradou
+                            </a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                4 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Le+Paradou,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.gites.fr/gites_gite-d-hamptay_han-sur-lesse_h917534.htm"
+                                target="_blank" class="hotel-link">Le Gîte d'Hamptay</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                3 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Le+Gîte+d'Hamptay,+Han-sur-Lesse"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.lebriquemont.be/" target="_blank" class="hotel-link">Le Briquemont </a>
+                            <span class="distance">
+                                <!-- auto -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                7 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Le+Briquemont,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <!-- map -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.booking.com/hotel/fr/camp-paradis.fr.html" target="_blank"
+                                class="hotel-link">Camp Paradis</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                12 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Camp+Paradis,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.brohimont.be/tourisme-famenne-ardenne/" target="_blank"
+                                class="hotel-link">Brohimont Guest House</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                8 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Brohimont+Guest+House,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://gitesdewallonie.be/hebergements/gite-rural/rochefort/au-corti/"
+                                target="_blank" class="hotel-link">Gîtes Au Corti</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                10 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Gîtes+Au+Corti,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="http://www.les2sources.be" target="_blank" class="hotel-link">Les 2 sources</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                5 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Les+2+sources,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="main-link">
+                            <a href="https://www.gitelecristal.be/" target="_blank" class="hotel-link">Gîte Le
+                                Cristal</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                6 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Gîte+Le+Cristal,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-link">
+                            <a href="https://fr.airbnb.ca/rooms/1459255023091538266" target="_blank"
+                                class="hotel-link">Gîte autonome "A l'éc'Art"</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                8 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Gîte+autonome+A+l'éc'Art,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+            </div>
+
+            <!-- AIRBNB -->
+            <div class="section">
+                <h5>Airbnb :</h5>
+                <ul class="link-list">
+                    <li>
+                        <div class="main-link">
+                            <a href="https://fr.airbnb.be/rooms/44531134" target="_blank" class="hotel-link">Villa
+                                George</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                6 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Villa+George,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="main-link">
+                            <a href="https://fr.airbnb.be/rooms/22726316" target="_blank" class="hotel-link">La Ferme de
+                                Gongon</a>
+                            <span class="distance">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5S16.67 13 17.5 13s1.5.67 1.5 1.5S18.33 16 17.5 16z" />
+                                </svg>
+                                7 km
+                            </span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=La+Ferme+de+Gongon,+Rochefort"
+                                target="_blank" class="maps-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <!-- Zelfde patroon -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
